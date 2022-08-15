@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>8BitCoder - Heaven for Coders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">8BitCoder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+                <li class="nav-item dropdown">
+              </li>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">WebDevlopement</a></li>
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Write for us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">ContactUs</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+          Login
+        </button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">
+          SignUp
+        </button>
+        
+
+            </div>
+          </div>
+        </div>
+      </nav>
+\
+<!-- LoginModal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login to 8BitCoder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUpModal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get a 8BitCoder Account </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/photos/coding-language-development-icon-on-yellow-background-software-picture-id1372764637?b=1&k=20&m=1372764637&s=170667a&w=0&h=AAXme4I49rP563h1ihhW_GUtHf1_bJCmKB4mm0gYnjs=" class="d-block w-100" width="1400" height="600" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome to 8BitCoder</h2>
+              <p>Technology News , Devlopment and Trends </p>
+              <button class="btn btn-primary">
+                Technology
+              </button>
+              <button class="btn btn-danger">
+                WebDevlopement
+              </button>
+              <button class="btn btn-success">
+                TechFun
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fA==&auto=format&fit=crop&w=800&q=60" class="d-block w-100" width="1400" height="600" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>The Best Coding Blog</h2>
+                <p>Technology News , Devlopment and Trends </p>
+                <button class="btn btn-primary">
+                  Technology
+                </button>
+                <button class="btn btn-danger">
+                  WebDevlopement
+                </button>
+                <button class="btn btn-success">
+                  TechFun
+                </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/photos/close-up-of-hands-contemporary-website-developer-man-typing-and-code-picture-id1167467556?k=20&m=1167467556&s=612x612&w=0&h=K54kGN1ghQViSL2m7aE49yerFeLZN00eIOUqXVNQ730=" class="d-block w-100" width="1400" height="600" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Award Winning Blog</h2>
+                <p>Technology News , Devlopment and Trends </p>
+                <button class="btn btn-primary">
+                  Technology
+                </button>
+                <button class="btn btn-danger">
+                  WebDevlopement
+                </button>
+                <button class="btn btn-success">
+                  TechFun
+                </button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container my-4" >
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary">Programming</strong>
+                  <h3 class="mb-0">Introduction To Java</h3>
+                  <div class="mb-1 text-muted">Aug 15 </div>
+                  <p class="card-text mb-auto">JAVA was developed by James Gosling at Sun Microsystems Inc in the year 1995, later acquired by Oracle Corporation. It is a simple programming language. Java makes writing, compiling, and debugging programming easy. </p>
+                  <a href="https://www.geeksforgeeks.org/introduction-to-java/" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="thumb1.png" class="bd-placeholder-img" width="240" height="250" style="margin-top: 20px; margin-right: 30px;"></img>
+        
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary"> Python For Artificial Intelligence </strong>
+                  <h3 class="mb-0">Advanced Computer Vision With Python</h3>
+                  <div class="mb-1 text-muted">Mar 11</div>
+                  <p class="mb-auto">Artificial intelligence is the intelligence demonstrated by machines, in contrast to the intelligence displayed by humans.
+
+                    This tutorial covers the basic concepts of various fields of artificial intelligence like Artificial Neural Networks, Natural Language Processing, Machine Learning, Deep Learning, Genetic algorithms etc., and its implementation in Python.
+                    
+                    </p>
+                  <a href="https://www.tutorialspoint.com/artificial_intelligence_with_python/index.htm" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="thumb4.jpeg" class="bd-placeholder-img" width="240" height="250" style="margin-top: 60px; margin-right: 30px;"></img>
+        
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary"> Python For Artificial Intelligence </strong>
+                    <h3 class="mb-0">Google Summer Of Code</h3>
+                    <div class="mb-1 text-muted">Aug 15</div>
+                    <p class="mb-auto">The Google Summer of Code, often abbreviated to GSoC, is an international annual program in which Google awards stipends to contributors who successfully complete a free and open-source software coding project during the summer. As of 2022, the program is open to anyone aged 18 or over,no longer just students and recent graduates.
+                      </p>
+                    <a href="https://en.wikipedia.org/wiki/Google_Summer_of_Code#:~:text=As%20of%202022%2C%20the%20program,country%20where%20they%20are%20located." class="stretched-link">Continue reading</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                      <img src="thumb3.png" class="bd-placeholder-img" width="240" height="250" style="margin-top: 60px; margin-right: 30px;"></img>
+          
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary"> UI & UX </strong>
+                    <h3 class="mb-0">UI&UX Desigining</h3>
+                    <div class="mb-1 text-muted">Aug 15</div>
+                    <p class="mb-auto">A user experience (UX) designer works on a team to create products that provide meaningful and enjoyable experiences for users. They are concerned with the entire process of product design, from branding to design to useability. UI (user interface) designers build interfaces in software or other computerized devices.
+                      </p>
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjOuvj8xsj5AhUKdmAKHXX2B28YABABGgJ0bQ&ohost=www.google.com&cid=CAESbOD2GXH2ElnY1FXM9BQQ_IEIpXgSSRxMIQkN7a3-y05oazIz4QNxu95A8jD7OdQnw9i7EhBl6LjJ0gw7bx4AIE9FeQqbtN8dLWIp_HGrmbuLYKPux6jcepSOHzVOkWyGuY2BJpxRxWTXuBmNlQ&sig=AOD64_3GwpS2mjXFrw3cKjDNuzvt7KGUcw&q&adurl&ved=2ahUKEwiCxe78xsj5AhWicGwGHQFUDyQQ0Qx6BAgDEAE" class="stretched-link">Continue reading</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                      <img src="thumb2.jpeg" class="bd-placeholder-img" width="240" height="250" style="margin-top: 60px; margin-right: 30px;"></img>
+          
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p style="margin-left: 550px;">© 2022 8BitCoder, Inc. All rights reserved.</p>
+      </div>
+  </body>
+</html>
